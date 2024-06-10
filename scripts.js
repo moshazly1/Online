@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     alert("Registration successful!");
-    window.location.href = "index.html";
+    window.location.href = "on.html";
   });
 });
 
