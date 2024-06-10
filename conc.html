@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حجز تذاكر الحفلات</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="concert-header">
+      <h1 class="header-title">نظام حجز تذاكر الحفلات</h1>
+    </header>
+    <main class="main-wrapper">
+      <section class="form-wrapper" id="concert-form">
+        <h2 class="form-header">احجز تذكرتك الآن</h2>
+        <form id="reservation-form" class="reservation-form">
+          <label for="name" class="input-label">الاسم:</label>
+          <input type="text" id="name" class="input-field" required />
+
+          <label for="email" class="input-label">البريد الإلكتروني:</label>
+          <input type="email" id="email" class="input-field" required />
+
+          <label for="national-id" class="input-label">الرقم القومي:</label>
+          <input type="text" id="national-id" class="input-field" required />
+
+          <label for="address" class="input-label">العنوان:</label>
+          <input type="text" id="address" class="input-field" required />
+
+          <label for="province" class="input-label">المحافظة:</label>
+          <input type="text" id="province" class="input-field" required />
+
+          <label for="credit-card" class="input-label">رقم الفيزا:</label>
+          <input type="text" id="credit-card" class="input-field" required />
+
+          <label for="artist" class="input-label">الفنان صاحب الحفلة:</label>
+          <input type="text" id="artist" class="input-field" required />
+
+          <label for="date" class="input-label">تاريخ الحفلة:</label>
+          <input type="date" id="date" class="input-field" required />
+
+          <button type="submit" class="submit-button">احجز الآن</button>
+        </form>
+      </section>
+      <section class="confirmation-wrapper" id="confirmation">
+        <h2 class="confirmation-header">تأكيد الحجز</h2>
+        <p id="confirmation-message" class="confirmation-message"></p>
+        <button class="print-button" onclick="printTicket()">
+          طباعة التذكرة
+        </button>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

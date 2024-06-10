@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حجز تذاكر كرة القدم</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <h1 class="header-title">نظام حجز تذاكر كرة القدم</h1>
+    </header>
+    <main class="main-section">
+      <section class="form-section" id="ticket-form">
+        <h2 class="form-title">احجز تذكرتك الآن</h2>
+        <form id="booking-form" class="booking-form">
+          <label for="name" class="form-label">الاسم:</label>
+          <input type="text" id="name" class="form-input" required />
+
+          <label for="email" class="form-label">البريد الإلكتروني:</label>
+          <input type="email" id="email" class="form-input" required />
+
+          <label for="national-id" class="form-label">الرقم القومي:</label>
+          <input type="text" id="national-id" class="form-input" required />
+
+          <label for="address" class="form-label">العنوان:</label>
+          <input type="text" id="address" class="form-input" required />
+
+          <label for="province" class="form-label">المحافظة:</label>
+          <input type="text" id="province" class="form-input" required />
+
+          <label for="credit-card" class="form-label">رقم الفيزا:</label>
+          <input type="text" id="credit-card" class="form-input" required />
+
+          <label for="team1" class="form-label">الفريق الأول:</label>
+          <input type="text" id="team1" class="form-input" required />
+
+          <label for="team2" class="form-label">الفريق الثاني:</label>
+          <input type="text" id="team2" class="form-input" required />
+
+          <label for="section" class="form-label">الدرجة:</label>
+          <select id="section" class="form-input" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <label for="date" class="form-label">تاريخ المباراة:</label>
+          <input type="date" id="date" class="form-input" required />
+
+          <label for="fan-id" class="form-label">Fan ID:</label>
+          <input type="text" id="fan-id" class="form-input" required />
+
+          <button type="submit" class="submit-button">احجز الآن</button>
+        </form>
+      </section>
+      <section class="confirmation-section" id="confirmation">
+        <h2 class="confirmation-title">تأكيد الحجز</h2>
+        <p id="confirmation-message" class="confirmation-message"></p>
+        <button class="print-button" onclick="printTicket()">
+          طباعة التذكرة
+        </button>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

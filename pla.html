@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حجز تذاكر الطيران</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <h1 class="header-title">نظام حجز تذاكر الطيران</h1>
+    </header>
+    <main class="main-container">
+      <section class="form-container" id="ticket-form">
+        <h2 class="form-title">احجز تذكرتك الآن</h2>
+        <form id="booking-form" class="booking-form">
+          <label for="name" class="form-label">الاسم:</label>
+          <input type="text" id="name" class="form-input" required />
+
+          <label for="email" class="form-label">البريد الإلكتروني:</label>
+          <input type="email" id="email" class="form-input" required />
+
+          <label for="national-id" class="form-label">الرقم القومي:</label>
+          <input type="text" id="national-id" class="form-input" required />
+
+          <label for="address" class="form-label">العنوان:</label>
+          <input type="text" id="address" class="form-input" required />
+
+          <label for="province" class="form-label">المحافظة:</label>
+          <input type="text" id="province" class="form-input" required />
+
+          <label for="credit-card" class="form-label">رقم الفيزا:</label>
+          <input type="text" id="credit-card" class="form-input" required />
+
+          <label for="departure" class="form-label">مكان المغادرة:</label>
+          <input type="text" id="departure" class="form-input" required />
+
+          <label for="destination" class="form-label">مكان الوصول:</label>
+          <input type="text" id="destination" class="form-input" required />
+
+          <label for="date" class="form-label">تاريخ الرحلة:</label>
+          <input type="date" id="date" class="form-input" required />
+
+          <button type="submit" class="submit-btn">احجز الآن</button>
+        </form>
+      </section>
+      <section class="confirmation-container" id="confirmation">
+        <h2 class="confirmation-title">تأكيد الحجز</h2>
+        <p id="confirmation-message" class="confirmation-message"></p>
+        <button class="print-btn" onclick="printTicket()">طباعة التذكرة</button>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
